@@ -1,0 +1,71 @@
+{
+  "name": "react-barcode-reader",
+  "version": "0.0.1",
+  "description": "A react component for reading barcodes and Qr codes from keybord input devices.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 9001",
+    "storybook:export": "build-storybook -c .storybook -o ./docs",
+    "build": "gulp",
+    "build:watch": "gulp watch",
+    "lint": "eslint -c ./.eslintrc.json ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kybarg/react-barcode-reader.git"
+  },
+  "keywords": [
+    "react",
+    "qr",
+    "qrcode",
+    "qrreader",
+    "qrscanner",
+    "barcode",
+    "barcode-reader"
+  ],
+  "author": "Ruslan Kyba <kybargr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kybarg/react-barcode-reader/issues"
+  },
+  "homepage": "https://github.com/kybarg/react-barcode-reader#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/cli": "^4.0.7",
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "del": "^3.0.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-react": "^7.11.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-butternut": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-inline-str": "^0.1.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3"
+  }
+}
