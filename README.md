@@ -49,7 +49,7 @@ class Test extends Component {
 
 ## Props
 | Prop | Type | Default Value | Description |
-|---|---|---|---|---|
+|---|---|---|---|
 | onScan | func |  | Callback after detection of a successfull scanning (scanned string in parameter) |
 | onError | func |  | Callback after detection of a unsuccessfull scanning (scanned string in parameter) |
 | HonReceive | func |  | Callback after receiving and processing a char (scanned char in parameter)
