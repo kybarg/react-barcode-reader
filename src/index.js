@@ -21,7 +21,7 @@ function isInput(element) {
   return tagName === 'INPUT' || tagName === 'TEXTAREA' || editable
 }
 
-function inIframe () {
+function inIframe() {
   try {
     return window.self !== window.top
   } catch (e) {
@@ -40,15 +40,15 @@ class BarcodeScanner extends React.Component {
     this.testTimer = false
     this.scanButtonCounter = 0
   }
-  
+
   componentDidMount() {
-    if(inIframe) window.parent.document.addEventListener('keypress', this.handleKeyPress)
-    else  window.document.addEventListener('keypress', this.handleKeyPress)
+    if (inIframe) window.parent.document.addEventListener('keypress', this.handleKeyPress)
+    window.document.addEventListener('keypress', this.handleKeyPress)
   }
-    
+
   componentWillUnmount() {
-    if(inIframe) window.parent.document.removeEventListener('keypress', this.handleKeyPress)
-    else  window.document.removeEventListener('keypress', this.handleKeyPress)
+    if (inIframe) window.parent.document.removeEventListener('keypress', this.handleKeyPress)
+    window.document.removeEventListener('keypress', this.handleKeyPress)
   }
 
   initScannerDetection = () => {
@@ -83,10 +83,10 @@ class BarcodeScanner extends React.Component {
     }
 
     let errorMsg = ''
-    if(this.stringWriting.length < minLength) {
+    if (this.stringWriting.length < minLength) {
       errorMsg = `String length should be greater or equal ${minLength}`
     } else {
-      if(this.lastCharTime - this.firstCharTime > this.stringWriting.length * avgTimeByChar) {
+      if (this.lastCharTime - this.firstCharTime > this.stringWriting.length * avgTimeByChar) {
         errorMsg = `Average key character time should be less or equal ${avgTimeByChar}ms`
       }
     }

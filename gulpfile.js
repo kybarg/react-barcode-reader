@@ -25,8 +25,8 @@ gulp.task('build', function() {
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
-  gulp.watch(paths.scripts, [ 'build' ])
+  gulp.watch(paths.scripts, gulp.series([ 'build' ]))
 })
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', [ 'build' ])
+gulp.task('default', gulp.series([ 'build' ]))

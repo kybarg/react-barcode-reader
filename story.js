@@ -16,8 +16,5 @@ class Wrapper extends Component {
   }
 }
 
-storiesOf('QR Reader', module)
-  .add('Camera not specified', () => <Wrapper />)
-  // .add('Choose camera', () => <Wrapper selectFacingMode />)
-  // .add('Legacy mode', () => <Wrapper legacyMode />)
-  // .add('Choose delay', () => <Wrapper selectDelay />)
+storiesOf('Barcode scanner', module)
+  .add('Default', () => <Wrapper />)
