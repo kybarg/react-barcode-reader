@@ -1,6 +1,6 @@
 {
   "name": "react-barcode-reader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A react component for reading barcodes and Qr codes from keybord input devices.",
   "main": "./lib/index.js",
   "module": "commonjs",
