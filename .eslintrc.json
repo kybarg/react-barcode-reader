@@ -72,9 +72,7 @@
       "react/prefer-es6-class": "warn",
       "react/prop-types": "warn",
       "react/react-in-jsx-scope": "warn",
-      "react/require-extension": "warn",
       "react/self-closing-comp": "warn",
-      "react/sort-comp": "warn",
-      "react/wrap-multilines": "warn"
+      "react/sort-comp": "warn"
     }
 }
