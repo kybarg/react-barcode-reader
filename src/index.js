@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-
 function isContentEditable(element) {
   if (typeof element.getAttribute !== 'function') {
     return false
