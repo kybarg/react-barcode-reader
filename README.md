@@ -52,7 +52,7 @@ class Test extends Component {
 |---|---|---|---|
 | onScan | func |  | Callback after detection of a successfull scanning (scanned string in parameter) |
 | onError | func |  | Callback after detection of a unsuccessfull scanning (scanned string in parameter) |
-| HonReceive | func |  | Callback after receiving and processing a char (scanned char in parameter)
+| onReceive | func |  | Callback after receiving and processing a char (scanned char in parameter)
 | onKeyDetect | func |  | Callback after detecting a keyDown (key char in parameter) - in contrast to onReceive, this fires for non-character keys like tab, arrows, etc. too!
 | timeBeforeScanTest | number | 100 | Wait duration (ms) after keypress event to check if scanning is finished
 | avgTimeByChar | number | 30 | Average time (ms) between 2 chars. Used to do difference between keyboard typing and scanning
