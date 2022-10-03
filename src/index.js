@@ -97,12 +97,12 @@ class BarcodeScanner extends React.Component {
 
   handleKeyPress = (e) => {
     const {
-      onKeyDetect, onReceive, scanButtonKeyCode, stopPropagation, preventDefault, endChar, startChar, timeBeforeScanTest,
+      onKeyDetect, onReceive, scanButtonKeyCode, stopPropagation, preventDefault, endChar, startChar, timeBeforeScanTest, preventScanOnInput
     } = this.props
 
     const { target } = e
 
-    if (target instanceof window.HTMLElement && isInput(target)) {
+    if (preventScanOnInput && target instanceof window.HTMLElement && isInput(target)) {
       return
     }
 
@@ -173,6 +173,7 @@ BarcodeScanner.propTypes = {
   stopPropagation: PropTypes.bool, // Stop immediate propagation on keypress event
   preventDefault: PropTypes.bool, // Prevent default action on keypress event
   testCode: PropTypes.string, // Test string for simulating
+  preventScanOnInput: PropTypes.bool, // Prevents input from being read at the input, text area, and other editable areas.
 }
 
 BarcodeScanner.defaultProps = {
@@ -184,6 +185,7 @@ BarcodeScanner.defaultProps = {
   scanButtonLongPressThreshold: 3,
   stopPropagation: false,
   preventDefault: false,
+  preventScanOnInput: true,
 }
 
 export default BarcodeScanner
