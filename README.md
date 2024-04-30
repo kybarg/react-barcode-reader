@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/react-barcode-reader.svg)](https://badge.fury.io/js/react-barcode-reader)
 
 ## Introduction
-A [React](https://facebook.github.io/react/) component for reading barcode an QR codes from devices that are represent as keyboard to the system.
+A [React](https://facebook.github.io/react/) component for reading barcode and QR codes from devices that are represent as keyboard to the system.
 
 ## Demo
 [kybarg.github.io/react-barcode-reader/](https://kybarg.github.io/react-barcode-reader/)
