@@ -65,6 +65,7 @@ class Test extends Component {
 | stopPropagation | bool | false | Stop immediate propagation on keypress event
 | preventDefault | bool | false | Prevent default action on keypress event
 | testCode | string |  | Test string for simulating
+| preventScanOnInput | bool | true | Prevents input from being read at the input, textarea, and other editable areas.
 
 ## Dev
 
